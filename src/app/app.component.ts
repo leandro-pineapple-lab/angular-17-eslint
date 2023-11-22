@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { SumService } from './services/sum.service';
 
 @Component({
   selector: 'app-root',
@@ -11,4 +12,8 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   title = 'my-app';
+
+  private sumer = inject(SumService)
+  total = this.sumer.calc(2, 4);
+
 }
