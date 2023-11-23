@@ -1,4 +1,4 @@
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { SumService } from './services/sum.service';
@@ -10,11 +10,9 @@ import { SumService } from './services/sum.service';
 	templateUrl: './app.component.html',
 	styleUrl: './app.component.scss',
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
 	title = 'my-app';
 
 	private sumer = inject(SumService);
 	total = this.sumer.calc(2, 4);
-
-	ngOnInit(): void {}
 }
