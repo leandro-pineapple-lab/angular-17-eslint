@@ -9,6 +9,4 @@ export class ClientsComponent {
 	leo = 'sss';
 	leo2 = 'sss';
 	constructor() {}
-
-	ngOnInit(): void {}
 }
