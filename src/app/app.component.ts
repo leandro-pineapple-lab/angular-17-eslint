@@ -22,6 +22,8 @@ export class AppComponent {
 
 		if (leo) {
 			dale;
+		} else {
+			dale;
 		}
 	}
 }
