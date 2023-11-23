@@ -1,13 +1,12 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+	providedIn: 'root',
 })
 export class SumService {
+	constructor() {}
 
-  constructor() { }
-
-  calc(a: number, b: number) {
-    return a + b;
-  }
+	calc(a: number, b: number) {
+		return a + b;
+	}
 }
