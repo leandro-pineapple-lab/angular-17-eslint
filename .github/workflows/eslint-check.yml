@@ -1,0 +1,23 @@
+name: Run ESLint and tests
+on: push
+
+env:
+  NODE_VERSION: '20.10.0'
+
+jobs:
+  eslint_and_test:
+    name: Run ESLint and tests
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Use Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: npm install
+        run: npm ci
+
+      - name: Run ESLint
+        run: npm run lint
