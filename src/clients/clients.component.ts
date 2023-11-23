@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
 	styleUrls: ['./clients.component.scss'],
 })
 export class ClientsComponent {
-	leo = 'sss';   
-	leo2 = 'sss';   
+	leo = 'sss';
+	leo2 = 'sss';
 	constructor() {}
 
 	ngOnInit(): void {}
