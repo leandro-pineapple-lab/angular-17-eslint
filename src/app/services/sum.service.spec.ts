@@ -13,4 +13,8 @@ describe('SumService', () => {
 	it('should be created', () => {
 		expect(service).toBeTruthy();
 	});
+
+	it('#calc should return 3', () => {
+		expect(service.calc(1, 2)).toBe(3);
+	});
 });
