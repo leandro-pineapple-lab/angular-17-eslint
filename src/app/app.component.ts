@@ -15,4 +15,15 @@ export class AppComponent {
 
 	private sumer = inject(SumService);
 	total = this.sumer.calc(2, 4);
+
+	constructor() {
+		const leo = true;
+		const dale = '';
+
+		if (leo) {
+			dale;
+		} else {
+			dale;
+		}
+	}
 }
